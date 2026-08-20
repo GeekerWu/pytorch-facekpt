@@ -1,0 +1,22 @@
+# 项目依赖包列表
+# -------------------------------------------------
+# 注意：版本号是基于项目使用需求设定的合理占位符。
+# python 3.7
+# 实际使用时，请根据您的CUDA版本和系统环境，查阅官方文档获取精确版本号。
+# pytorch 报错的话：
+#  File "C:\ProgramData\anaconda3\envs\pytorch-openpose\lib\site-packages\torchvision\models\maxvit.py", line 3, in <module>      
+# 安装扩展库：
+# pip install --upgrade typing-extensions
+# 修改部分源码torchvision\models\maxvit.py
+# from typing import Any, Callable, List, Optional, OrderedDict, Sequence, Tuple
+# 替换为如下：
+# from typing import Any, Callable, List, Optional, Sequence, Tuple
+# from typing_extensions import OrderedDict
+
+torch==1.13.0
+torchvision==0.14.0
+numpy>=1.21.0
+opencv-python>=4.5.0
+Pillow>=9.0.0
+matplotlib>=3.4.0
+imutils>=1.0.0

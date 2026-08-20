@@ -1,0 +1,17 @@
+# 忽略文件和目录
+# Git管理目录自身不会被忽略，但列出所有应该忽略的类型：
+
+# 忽略构建和系统生成的目录
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+.vscode/
+
+# 忽略大型数据集目录（根据项目情况，可改为单独管理或使用 LFS）
+dlib_dataset/ibug_300W_large_face_landmark_dataset/**
+dlib_dataset/*.gz
+# 忽略任何训练产生的模型权重文件 (如果后续要进行模型版本管理，可以使用 LFS)
+*.pth
+*.pt
